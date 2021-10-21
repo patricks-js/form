@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&family=Varela+Round&display=swap');
+
+:root {
+    --fontTitle: 'Urbanist', sans-serif; 
+    --fontPrincipal: 'Varela Round', sans-serif;
+    --corBox: #F6F6F6;
+    --corButtonLink: #3EA2F9;
+    --corFont: #828282;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: none;
+    background-color: var(--corBox);
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 30px;
+}
+
+fieldset {
+    border: none;
+}
+
+p{
+    font: normal normal 1em var(--fontTitle);
+}
+
+p a{
+    text-decoration: none;
+    color: var(--corButtonLink);
+}
+
+h1 {
+    font: normal bold 3em var(--fontTitle);
+}
+
+label {
+    font: normal bold 1.2em var(--fontPrincipal);
+}
