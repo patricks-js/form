@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&family=Varela+Round&display=swap');
+
+/* CONFIGS GLOBAIS */
+
+:root {
+    --fontTitle: 'Urbanist', sans-serif;
+    --fontPrincipal: 'Varela Round', sans-serif;
+    --corBox: #F6F6F6;
+    --corButtonLink: #3EA2F9;
+    --gradient: #2DBEE3;
+    --corFont: #828282;
+    --background: #EFF2FA;
+    --filtro: #25FAEB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* END */
+
+/* MAIN */
+
+main {
+    display: flex;
+}
+
+.conteine-princ {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.103);
+    padding: 20px 80px;
+    flex-direction: column;
+    margin-top: 100px;
+    border: 2px solid black;
+}
+
+/* MAIN */
+
+/* FORM GERAL */
+
+    /* SECTION 2 */
+
+    .form {
+        border: none;
+        background-color: var(--corBox);
+        border-radius: 10px;
+        box-sizing: border-box;
+        width: 400px;
+        height: 40px;
+        transition-duration: .3s;
+        text-indent: 10px;
+        outline: none;
+    }
+    
+    input.form:hover {
+        outline: none;
+        width: 450px;
+        background-color: white;
+        border: 3px dotted var(--corButtonLink);
+    }
+
+    /* input.form {
+
+    } */
+
+    /* PASSWORD */
+
+        .password{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-pass {
+            border: none;
+            background-color: var(--corBox);
+            border-radius: 10px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 40px;
+            transition-duration: .3s;
+            text-indent: 10px;
+            outline: none;
+        }
+
+        .form-pass:hover {
+            outline: none;
+            background-color: white;
+            border: 3px dotted var(--corButtonLink);
+        }
+
+        #pass-1 {
+            margin-left: 5px;
+        }
+
+    /* END */
+    
+    .check {
+        font: normal normal 1em var(--fontPrincipal); 
+        color: var(--corFont);
+        letter-spacing: -1px;
+    }
+    
+    .highlight.highlighted {
+        background-position: -100%;
+    }
+    
+    .highlight:hover{
+        background-image: linear-gradient(90deg,rgba(255,255,255,0) 95%,var(--filtro, #2DBEE3) 0);
+        background-size: 300%;
+        background-position: 0;
+        transition: background-position 1s;
+    } 
+
+
+    /* END */
+
+/* END */
+
+.conteiner-form {
+    border: 2px solid black;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+section fieldset, h1 {
+    margin: 30px 0;
+}
+
+
+.conteine-princ button {
+    background-color: var(--corButtonLink);
+    border: none;
+    padding: 15px;
+    width: 500px;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: white;
+    font: normal bold 1em var(--fontTitle);
+    cursor: pointer;
+}
+
+.conteine-princ fieldset {
+    border: none;
+}
+
+.conteine-princ p{
+    text-align: right;
+}
+
+.conteine-princ p a{
+    text-decoration: none;
+    color: var(--corButtonLink);
+}
+
+h1 {
+    font: normal bold 3em var(--fontTitle);
+}
+
+label {
+    font: normal bold 1.2em var(--fontPrincipal);
+}
