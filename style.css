@@ -6,6 +6,7 @@
     --corBox: #F6F6F6;
     --corButtonLink: #3EA2F9;
     --corFont: #828282;
+    --background: #EFF2FA;
 }
 
 * {
@@ -13,24 +14,53 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--background);
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.103);
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+section fieldset, h1 {
+    margin: 30px 0;
+}
+
 input {
     border: none;
     background-color: var(--corBox);
     border-radius: 10px;
     box-sizing: border-box;
-    width: 300px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
+    transition-duration: .3s;
 }
 
-fieldset {
+input:hover {
+    width: 300px;
+    background-color: white;
+    border: 3px dotted var(--corButtonLink);
+}
+
+main fieldset {
     border: none;
 }
 
-p{
+main p{
     font: normal normal 1em var(--fontTitle);
+    text-align: right;
 }
 
-p a{
+main p a{
     text-decoration: none;
     color: var(--corButtonLink);
 }
