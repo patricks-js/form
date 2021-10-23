@@ -1,0 +1,29 @@
+.conteine-princ {
+    background-color: var(--background-main);
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+}
+
+.form-pass {
+    border: none;
+    background-color: var(--corBox);
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 40px;
+    transition-duration: .3s;
+    text-indent: 10px;
+    outline: none;
+}
+
+.form-pass:hover {
+    outline: 2px solid var(--corButtonLink);
+    width: 510px;
+}

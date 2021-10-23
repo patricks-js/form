@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&family=Varela+Round&display=swap');
+
+/* CONFIGS GLOBAIS */
+
+:root {
+    --fontTitle: 'Urbanist', sans-serif;
+    --fontPrincipal: 'Varela Round', sans-serif;
+    --corBox: #ECF2F7;
+    --corButtonLink: #4C70FF;
+    --gradient: #2DBEE3;
+    --corFont: black;
+    --background-bd: #EDF5FD;
+    --background-main: #fff ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-bd);
+}
+
+/* END */
+
+/* MAIN */
+
+.conteine-princ {
+    background-color: var(--background-main);
+    width: 600px;
+    height:650px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+}
+
+form {
+    align-items: center;
+}
+
+section fieldset, h1 {
+    margin: 30px 0;
+}
+.conteine-princ fieldset {
+    border: none;
+}
+
+.conteine-princ p{
+    text-align: right;
+}
+
+.conteine-princ a{
+    text-decoration: none;
+    color: var(--corButtonLink);
+}
+
+.conteine-princ a:hover{
+    text-decoration: underline;
+}
+
+h1 {
+    font: normal bold 3em var(--fontTitle);
+}
+
+label {
+    font: normal bold 1.2em var(--fontPrincipal);
+}
+
+    /* FORM GERAL */
+
+        /* SECTION */
+        .conteiner-form {
+            height: 600px;
+            box-sizing: border-box;
+            width: 600px;
+        } 
+
+        .form {
+            border: none;
+            background-color: var(--corBox);
+            border-radius: 10px;
+            box-sizing: border-box;
+            width: 500px;
+            height: 40px;
+            transition-duration: .3s;
+            text-indent: 10px;
+            outline: none;
+        }       
+
+        input {
+            color: var(--corFont);
+            font-family: var(--fontPrincipal);
+        }
+
+        input.form:hover {
+            outline: none;
+            width: 510px;
+            background-color: white;
+            outline: 2px solid var(--corButtonLink);
+        }
+
+        /* PASSWORD */
+
+            .password{
+                display: flex;
+            }
+
+            .form-pass {
+                border: none;
+                background-color: var(--corBox);
+                border-radius: 10px;
+                box-sizing: border-box;
+                width: 245px;
+                height: 40px;
+                transition-duration: .3s;
+                text-indent: 10px;
+                outline: none;
+                
+            }
+            #pass-1 {
+                margin-right: 10px;
+            }
+            .form-pass:hover {
+                outline: 2px solid var(--corButtonLink);
+                width: 250px;
+            }
+
+
+        /* END */
+            
+        /* BUTTON AND CHECKBOX */
+
+            .check {
+                font: normal normal 1em var(--fontPrincipal); 
+                color: var(--corFont);
+                letter-spacing: -1px;
+            }
+
+            .conteine-princ button {
+                background-color: var(--corButtonLink);
+                border: none;
+                padding: 10px;
+                width: 500px;
+                align-items: center;
+                margin: 20px 0;
+                border-radius: 10px;
+                color: white;
+                font: normal bold 1.3em var(--fontTitle);
+                cursor: pointer;
+            }
+
+        /* END */
+
+        /* END */
+
+    /* END */
+
+    /* SECTION 2 */
+
+
+
+    /* END */
+
+
+    footer {
+        font: normal normal 1.2em arial;
+        text-align: center;
+        background-color: var(--corButtonLink);
+        padding: 7px;
+        color: white;
+    }
+
+    footer a {
+        padding: 3px;
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 10px;
+        color: white;
+        transition-duration: .4s;
+    }
