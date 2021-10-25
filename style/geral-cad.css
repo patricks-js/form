@@ -135,6 +135,10 @@ label {
             
         /* BUTTON AND CHECKBOX */
 
+            /* input[type="checkbox"]:checked {
+                background-color: var(--corButtonLink);
+            } */
+            
             .check {
                 font: normal normal 1em var(--fontPrincipal); 
                 color: var(--corFont);
